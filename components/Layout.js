@@ -12,7 +12,7 @@ export default function Layout({ children }) {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <Link href="/" className="font-serif text-2xl text-dark-gray hover:scale-105 transition-transform">
-                savyr
+                Turing&Tao
               </Link>
               <nav className="flex space-x-8">
                 <Link href="/about" className="text-dark-gray hover:scale-105 transition-transform">
