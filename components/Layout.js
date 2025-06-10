@@ -27,6 +27,10 @@ export default function Layout({ children }) {
                   Thinking
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-200 group-hover:w-full"></span>
                 </Link>
+                <Link href="/savyr" className="text-dark-gray hover:text-accent font-medium transition-colors duration-200 relative group">
+                  Savyr's Corner
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-200 group-hover:w-full"></span>
+                </Link>
                 <Link href="/connect" className="text-dark-gray hover:text-accent font-medium transition-colors duration-200 relative group">
                   Connect
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-200 group-hover:w-full"></span>
