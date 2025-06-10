@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap&text=Vinos|SavyrAboutMeProjectsThinkingCornerConnect');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +6,8 @@
 body {
   @apply bg-beige text-dark-gray font-sans antialiased;
   line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,16 +15,43 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  body {
+    line-height: 1.7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+  }
+}
+
 .gradient-bg {
   background: linear-gradient(135deg, #f8f6f0 0%, #f5f2ea 100%);
 }
 
 .card-hover {
-  @apply transition-all duration-300 hover:shadow-medium hover:-translate-y-1;
+  @apply transition-all duration-300;
+}
+
+/* Desktop hover effects */
+@media (hover: hover) and (pointer: fine) {
+  .card-hover:hover {
+    @apply shadow-medium -translate-y-1;
+  }
+}
+
+/* Mobile tap effects */
+@media (hover: none) and (pointer: coarse) {
+  .card-hover:active {
+    @apply shadow-medium scale-95;
+  }
 }
 
 .btn-primary {
   @apply bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .text-gradient {
@@ -30,4 +59,17 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Touch-friendly interactive elements */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  @apply flex items-center justify-center;
+}
+
+/* Improved mobile scrolling */
+.smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
