@@ -38,26 +38,27 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow"
+              className="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-2 group"
             >
-              <div className="relative h-48 w-full">
+              <div className="relative h-56 w-full overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
               
-              <div className="p-6">
-                <h2 className="text-2xl font-serif mb-2">{project.title}</h2>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+              <div className="p-8">
+                <h2 className="text-2xl font-serif font-semibold mb-3 text-dark-gray group-hover:text-accent transition-colors">{project.title}</h2>
+                <p className="text-medium-gray mb-6 leading-relaxed">{project.description}</p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
-                      className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                      className="bg-gray-50 text-medium-gray px-3 py-2 rounded-full text-sm font-medium border border-gray-200"
                     >
                       {tag}
                     </span>
