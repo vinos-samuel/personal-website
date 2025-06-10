@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/savyr": "pages/savyr.js",
   "/": "pages/index.js",
-  "/savyr": "pages/savyr.js"
+  "/about": "pages/about.js",
+  "/connect": "pages/connect.js"
 }
