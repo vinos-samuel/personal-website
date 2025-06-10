@@ -32,11 +32,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/about.js"
     ],
-    "/connect": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/connect.js"
-    ],
     "/savyr": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

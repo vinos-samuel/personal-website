@@ -3,7 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/savyr": "pages/savyr.js",
-  "/": "pages/index.js",
   "/about": "pages/about.js",
-  "/connect": "pages/connect.js"
+  "/": "pages/index.js"
 }
