@@ -9,14 +9,14 @@ export default function Connect() {
         <div className="max-w-2xl mx-auto text-center">
           {/* Main Message */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-semibold mb-16 text-dark-gray leading-relaxed">
-            If you're curious, thoughtful, and building something weird, let's talk.
+            Consulting on Freelance & CW Strategy? or If you're curious, thoughtful, and building something weird, let's talk.
           </h1>
 
           {/* Social Links */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
             {/* LinkedIn */}
             <a 
-              href="https://linkedin.com/in/yourprofile" 
+              href="https://www.linkedin.com/in/vinos/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group flex flex-col items-center space-y-3 touch-target transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded-lg p-2"
@@ -31,7 +31,7 @@ export default function Connect() {
 
             {/* Twitter/X */}
             <a 
-              href="https://twitter.com/yourusername" 
+              href="https://x.com/vinos25" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group flex flex-col items-center space-y-3 touch-target transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded-lg p-2"
@@ -46,7 +46,7 @@ export default function Connect() {
 
             {/* Email */}
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:Vinos.Samuel@Gmail.com" 
               className="group flex flex-col items-center space-y-3 touch-target transition-transform duration-200 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded-lg p-2"
             >
               <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center group-hover:bg-green-700 group-active:bg-green-800 transition-colors duration-200">
