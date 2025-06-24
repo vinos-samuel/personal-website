@@ -1,10 +1,10 @@
 {
   "/_app": "pages/_app.js",
-  "/connect": "pages/connect.html",
-  "/about": "pages/about.html",
-  "/projects": "pages/projects.html",
   "/_error": "pages/_error.js",
+  "/about": "pages/about.html",
+  "/connect": "pages/connect.html",
   "/": "pages/index.html",
+  "/projects": "pages/projects.html",
   "/savyr": "pages/savyr.html",
   "/thinking": "pages/thinking.html",
   "/_document": "pages/_document.js",
