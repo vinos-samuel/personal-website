@@ -9,7 +9,13 @@ export default function Connect() {
         <div className="max-w-2xl mx-auto text-center">
           {/* Main Message */}
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-serif font-normal mb-16 text-dark-gray leading-relaxed">
-            If you need a consultant or freelancer to support your Workforce Strategy? or If you're curious, thoughtful, and building something weird, let's talk.
+            If you need a consultant or freelancer to support your Workforce Strategy?
+            <br />
+            <span className="block mt-4">Or</span>
+            <br />
+            If you're curious, thoughtful, and building something weird.
+            <br />
+            <span className="block mt-4 font-medium">Let's talk.</span>
           </h1>
 
           {/* Social Links */}
