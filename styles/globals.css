@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap&text=Vinos|SavyrAboutMeProjectsThinkingCornerConnect');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -66,6 +66,11 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 44px;
   min-width: 44px;
   @apply flex items-center justify-center;
+}
+
+/* Custom font for logo */
+.logo-font {
+  font-family: 'Your Custom Font', 'Playfair Display', Georgia, serif;
 }
 
 /* Improved mobile scrolling */

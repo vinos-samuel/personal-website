@@ -18,8 +18,8 @@ export default function Layout({ children }) {
         <header className="bg-white/80 backdrop-blur-sm shadow-soft border-b border-gray-100 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16 sm:h-18">
-              <Link href="/" className="font-serif text-2xl sm:text-3xl font-bold text-gradient hover:scale-105 transition-transform duration-200">
-                Vinos | Savyr
+              <Link href="/" className="logo-font text-2xl sm:text-3xl font-bold text-gradient hover:scale-105 transition-transform duration-200">
+                Vinos Samuel
               </Link>
               
               {/* Desktop Navigation */}
