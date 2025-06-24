@@ -25,19 +25,18 @@ const projects = [
   },
   {
     id: 'flow32',
-    name: 'Flow3/2',
-    tagline: 'A productivity system that helps you accomplish more by working in focused 3-hour blocks with intentional 2-hour breaks.',
-    description: 'A time management application that implements the Flow3/2 methodology for sustained productivity through structured work-rest cycles.',
+    name: 'Flow 3/2',
+    tagline: 'Master your time with the 3-priority, 2-hour focus method.',
+    description: 'A lightweight productivity app that helps users plan each day around three core priorities and two focused time blocks — promoting clarity, momentum, and less cognitive overload.',
     image: 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg',
     tags: ['Productivity', 'UX Design', 'React', 'Time Management'],
-    link: 'https://flow32.example.com',
+    link: 'https://elaborate-toffee-5ca246.netlify.app/',
     fullDetails: {
-      whatItDoes: 'Flow3/2 is a productivity application that implements a unique time management methodology: 3 hours of focused work followed by 2 hours of intentional rest or different activities. The app provides session tracking, break suggestions, and analytics to help users optimize their daily rhythm.',
-      whyBuilt: 'Traditional productivity methods like Pomodoro felt too fragmented for deep work. I created Flow3/2 to support longer periods of focused attention while ensuring adequate recovery time. The system was inspired by natural energy cycles and research on sustained attention.',
-      whatLearned: 'Building Flow3/2 taught me about user behavior patterns, the psychology of productivity, and how to design interfaces that support focus rather than distract from it. I also learned about data visualization for personal analytics and the importance of customizable productivity systems.',
+      whatItDoes: 'Flow 3/2 is a lightweight productivity app that helps users plan each day around three core priorities and two focused time blocks — promoting clarity, momentum, and less cognitive overload.',
+      whyBuilt: 'I wanted a simple system to help me and others cut through noise and focus on what actually moves the needle each day. The goal wasn\'t to track more — it was to *do less but better*. It became part productivity tool, part daily reflection ritual.',
+      whatLearned: 'I refined how I think about time, task weight, and design simplicity. It was also a chance to build front to back on my own — from UX planning to deployment — and understand how tools shape habits.',
       liveLinks: [
-        { name: 'Live App', url: 'https://flow32.example.com' },
-        { name: 'Methodology Guide', url: 'https://flow32.example.com/guide' }
+        { name: 'Live Demo', url: 'https://elaborate-toffee-5ca246.netlify.app/' }
       ]
     }
   },
