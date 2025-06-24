@@ -12,13 +12,13 @@ const projects = [
     description: 'A web app that lets users talk to any book using AI — asking questions, challenging ideas, or diving into character perspectives.',
     image: 'https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg',
     tags: ['AI', 'React', 'Education', 'Natural Language Processing'],
-    link: 'https://www.mybookchat.co',
+    link: 'https://mybookchat.co/',
     fullDetails: {
       whatItDoes: 'BookChat is a web app that lets users talk to any book using AI — asking questions, challenging ideas, or diving into character perspectives. It connects Google Books, OpenAI, and Amazon APIs for a rich reading experience. Users can upload PDF books and create book maps.',
       whyBuilt: 'I wanted to build a tool that helps people, especially curious kids and thinkers, go beyond reading and start interacting with stories. It also became a way to explore AI\'s potential in education and reflection — something I now share with my son. Besides, I wanted to see how deep vibe coding can take me.',
       whatLearned: 'How to work with AI agents (Lovable + Replit), manage API integrations, and design meaningful dialogue UX. I also learned that people don\'t just want answers from books — they want conversation and reinterpretation.',
       liveLinks: [
-        { name: 'Live', url: 'https://www.mybookchat.co' },
+        { name: 'Live', url: 'https://mybookchat.co/' },
         { name: 'Prototype', url: 'https://preview--book-bot.lovable.app/' }
       ]
     }
