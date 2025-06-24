@@ -8,15 +8,12 @@ export default function Connect() {
       <div className="min-h-[80vh] flex items-center justify-center px-4">
         <div className="max-w-2xl mx-auto text-center">
           {/* Main Message */}
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-serif font-normal mb-16 text-dark-gray leading-relaxed">
-            If you need a consultant or freelancer to support your Workforce Strategy?
-            <br />
-            <span className="block mt-4">Or</span>
-            <br />
-            If you're curious, thoughtful, and building something weird.
-            <br />
-            <span className="block mt-4 font-medium">Let's talk.</span>
-          </h1>
+          <div className="text-2xl md:text-3xl lg:text-4xl font-serif font-normal mb-16 text-dark-gray leading-relaxed space-y-6">
+            <p>If you need a consultant or freelancer to support your Workforce Strategy?</p>
+            <p>Or</p>
+            <p>If you're curious, thoughtful, and building something weird.</p>
+            <p className="font-medium">Let's talk.</p>
+          </div>
 
           {/* Social Links */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
