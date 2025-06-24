@@ -10,7 +10,7 @@ const projects = [
     name: 'BookChat',
     tagline: 'Chat with your favorite books. Explore ideas, characters, and themes in conversation.',
     description: 'A web app that lets users talk to any book using AI — asking questions, challenging ideas, or diving into character perspectives.',
-    image: 'https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg',
+    image: '/attached_assets/Screenshot 2025-06-24 at 1.33.58 PM_1750743275369.png',
     tags: ['AI', 'React', 'Education', 'Natural Language Processing'],
     link: 'https://mybookchat.co/',
     fullDetails: {
