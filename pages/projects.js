@@ -2,32 +2,76 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const projects = [
   {
-    title: 'BookBot',
-    description: 'AI-powered reading companion that helps children develop a love for books through interactive storytelling and personalized recommendations.',
+    id: 'bookbot',
+    name: 'BookBot',
+    tagline: 'AI-powered reading companion that helps children develop a love for books through interactive storytelling.',
+    description: 'An intelligent reading assistant that provides personalized book recommendations and creates interactive storytelling experiences to engage young readers.',
     image: 'https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg',
-    tags: ['AI', 'React', 'Natural Language Processing', 'Education'],
-    link: 'https://bookbot.example.com'
+    tags: ['AI', 'React', 'Education', 'Natural Language Processing'],
+    link: 'https://bookbot.example.com',
+    fullDetails: {
+      whatItDoes: 'BookBot is an AI-powered reading companion designed specifically for children. It analyzes reading patterns, comprehension levels, and interests to provide personalized book recommendations. The platform features interactive storytelling sessions where children can engage with characters, ask questions about the plot, and even influence story outcomes through guided choices.',
+      whyBuilt: 'I built BookBot after observing how my son Savyr interacted with books and digital content. I wanted to create something that bridges the gap between traditional reading and modern interactive experiences, helping children develop not just reading skills but a genuine love for storytelling.',
+      whatLearned: 'This project taught me about natural language processing for children\'s content, the importance of age-appropriate AI interactions, and how to design educational technology that feels more like play than learning. I also gained deep insights into child psychology and reading development patterns.',
+      liveLinks: [
+        { name: 'Live Demo', url: 'https://bookbot.example.com' },
+        { name: 'GitHub', url: 'https://github.com/example/bookbot' }
+      ]
+    }
   },
   {
-    title: 'CT Hub',
-    description: 'Comprehensive platform for computational thinking education, providing tools and resources for educators and students.',
+    id: 'flow32',
+    name: 'Flow3/2',
+    tagline: 'A productivity system that helps you accomplish more by working in focused 3-hour blocks with intentional 2-hour breaks.',
+    description: 'A time management application that implements the Flow3/2 methodology for sustained productivity through structured work-rest cycles.',
     image: 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg',
-    tags: ['Education', 'React', 'Node.js', 'MongoDB'],
-    link: 'https://cthub.example.com'
+    tags: ['Productivity', 'UX Design', 'React', 'Time Management'],
+    link: 'https://flow32.example.com',
+    fullDetails: {
+      whatItDoes: 'Flow3/2 is a productivity application that implements a unique time management methodology: 3 hours of focused work followed by 2 hours of intentional rest or different activities. The app provides session tracking, break suggestions, and analytics to help users optimize their daily rhythm.',
+      whyBuilt: 'Traditional productivity methods like Pomodoro felt too fragmented for deep work. I created Flow3/2 to support longer periods of focused attention while ensuring adequate recovery time. The system was inspired by natural energy cycles and research on sustained attention.',
+      whatLearned: 'Building Flow3/2 taught me about user behavior patterns, the psychology of productivity, and how to design interfaces that support focus rather than distract from it. I also learned about data visualization for personal analytics and the importance of customizable productivity systems.',
+      liveLinks: [
+        { name: 'Live App', url: 'https://flow32.example.com' },
+        { name: 'Methodology Guide', url: 'https://flow32.example.com/guide' }
+      ]
+    }
   },
   {
-    title: 'DomestiQ',
-    description: 'Smart platform connecting households with verified domestic helpers, streamlining the hiring and management process.',
+    id: 'contingent-workforce-hub',
+    name: 'Contingent Workforce Hub',
+    tagline: 'AI-powered knowledge platform for workforce strategy professionals managing contingent talent at scale.',
+    description: 'A comprehensive platform that centralizes contingent workforce knowledge, provides AI-driven insights, and connects HR professionals with strategic resources.',
     image: 'https://images.pexels.com/photos/3989578/pexels-photo-3989578.jpeg',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'Platform'],
-    link: 'https://domestiq.example.com'
+    tags: ['AI Agent', 'HR Tech', 'Knowledge Hub', 'Workforce Strategy'],
+    link: 'https://cwh.example.com',
+    fullDetails: {
+      whatItDoes: 'The Contingent Workforce Hub is an AI-powered platform that serves as a central knowledge repository for workforce strategy professionals. It features an intelligent assistant that can answer complex questions about contingent workforce management, compliance requirements, market trends, and strategic best practices.',
+      whyBuilt: 'Working in workforce strategy, I noticed how fragmented and scattered industry knowledge was. Professionals were spending too much time searching for information across multiple sources. I built this hub to centralize expertise and make it accessible through conversational AI.',
+      whatLearned: 'This project deepened my understanding of enterprise knowledge management, AI agent development, and the specific challenges facing modern workforce strategy teams. I learned how to build systems that don\'t just store information but actively help professionals make better strategic decisions.',
+      liveLinks: [
+        { name: 'Platform Demo', url: 'https://cwh.example.com' },
+        { name: 'Knowledge Base', url: 'https://cwh.example.com/knowledge' }
+      ]
+    }
   }
 ];
 
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <Layout>
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -52,7 +96,7 @@ export default function Projects() {
               <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={project.name}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -61,9 +105,14 @@ export default function Projects() {
               
               {/* Project Content */}
               <div className="p-6">
-                <h2 className="text-2xl font-serif font-semibold mb-3 text-dark-gray group-hover:text-accent transition-colors">
-                  {project.title}
+                <h2 className="text-2xl font-serif font-semibold mb-2 text-dark-gray group-hover:text-accent transition-colors">
+                  {project.name}
                 </h2>
+                
+                <p className="text-medium-gray mb-3 leading-relaxed text-sm font-medium">
+                  {project.tagline}
+                </p>
+                
                 <p className="text-medium-gray mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
@@ -80,18 +129,16 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* External Link */}
-                <Link 
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                {/* View Project Button */}
+                <button
+                  onClick={() => openModal(project)}
                   className="inline-flex items-center text-accent hover:text-accent-dark font-medium transition-colors group-hover:translate-x-1 duration-200"
                 >
                   View Project
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+                </button>
               </div>
             </div>
           ))}
@@ -112,6 +159,94 @@ export default function Projects() {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedProject && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50" onClick={closeModal}>
+          <div className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            {/* Modal Header */}
+            <div className="relative">
+              <div className="h-64 w-full overflow-hidden rounded-t-3xl">
+                <Image
+                  src={selectedProject.image}
+                  alt={selectedProject.name}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+              
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-2 text-white hover:bg-opacity-30 transition-all"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              
+              <div className="absolute bottom-6 left-6 text-white">
+                <h2 className="text-3xl font-serif font-bold mb-2">{selectedProject.name}</h2>
+                <p className="text-lg opacity-90">{selectedProject.tagline}</p>
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-8">
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                {selectedProject.tags.map((tag, tagIndex) => (
+                  <span 
+                    key={tagIndex}
+                    className="bg-accent bg-opacity-10 text-accent px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {/* Project Details */}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-serif font-semibold mb-3 text-dark-gray">What it does</h3>
+                  <p className="text-medium-gray leading-relaxed">{selectedProject.fullDetails.whatItDoes}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-serif font-semibold mb-3 text-dark-gray">Why I built it</h3>
+                  <p className="text-medium-gray leading-relaxed">{selectedProject.fullDetails.whyBuilt}</p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-serif font-semibold mb-3 text-dark-gray">What I learned</h3>
+                  <p className="text-medium-gray leading-relaxed">{selectedProject.fullDetails.whatLearned}</p>
+                </div>
+
+                {/* Live Links */}
+                <div>
+                  <h3 className="text-xl font-serif font-semibold mb-4 text-dark-gray">Links</h3>
+                  <div className="flex flex-wrap gap-4">
+                    {selectedProject.fullDetails.liveLinks.map((link, linkIndex) => (
+                      <Link
+                        key={linkIndex}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-accent-dark transition-colors"
+                      >
+                        {link.name}
+                        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }
