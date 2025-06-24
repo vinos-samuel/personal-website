@@ -45,8 +45,8 @@ function Layout({ children }) {
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                             href: "/",
-                                            className: "font-serif text-2xl sm:text-3xl font-bold text-gradient hover:scale-105 transition-transform duration-200",
-                                            children: "Vinos | Savyr"
+                                            className: "logo-font text-2xl sm:text-3xl font-bold text-gradient hover:scale-105 transition-transform duration-200",
+                                            children: "Vinos Samuel"
                                         }),
                                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("nav", {
                                             className: "hidden md:flex space-x-8 lg:space-x-10",
