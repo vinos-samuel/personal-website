@@ -7,19 +7,19 @@ import { useState } from 'react';
 const projects = [
   {
     id: 'bookbot',
-    name: 'BookBot',
-    tagline: 'AI-powered reading companion that helps children develop a love for books through interactive storytelling.',
-    description: 'An intelligent reading assistant that provides personalized book recommendations and creates interactive storytelling experiences to engage young readers.',
+    name: 'BookChat',
+    tagline: 'Chat with your favorite books. Explore ideas, characters, and themes in conversation.',
+    description: 'A web app that lets users talk to any book using AI — asking questions, challenging ideas, or diving into character perspectives.',
     image: 'https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg',
     tags: ['AI', 'React', 'Education', 'Natural Language Processing'],
-    link: 'https://bookbot.example.com',
+    link: 'https://www.mybookchat.co',
     fullDetails: {
-      whatItDoes: 'BookBot is an AI-powered reading companion designed specifically for children. It analyzes reading patterns, comprehension levels, and interests to provide personalized book recommendations. The platform features interactive storytelling sessions where children can engage with characters, ask questions about the plot, and even influence story outcomes through guided choices.',
-      whyBuilt: 'I built BookBot after observing how my son Savyr interacted with books and digital content. I wanted to create something that bridges the gap between traditional reading and modern interactive experiences, helping children develop not just reading skills but a genuine love for storytelling.',
-      whatLearned: 'This project taught me about natural language processing for children\'s content, the importance of age-appropriate AI interactions, and how to design educational technology that feels more like play than learning. I also gained deep insights into child psychology and reading development patterns.',
+      whatItDoes: 'BookChat is a web app that lets users talk to any book using AI — asking questions, challenging ideas, or diving into character perspectives. It connects Google Books, OpenAI, and Amazon APIs for a rich reading experience. Users can upload PDF books and create book maps.',
+      whyBuilt: 'I wanted to build a tool that helps people, especially curious kids and thinkers, go beyond reading and start interacting with stories. It also became a way to explore AI\'s potential in education and reflection — something I now share with my son. Besides, I wanted to see how deep vibe coding can take me.',
+      whatLearned: 'How to work with AI agents (Lovable + Replit), manage API integrations, and design meaningful dialogue UX. I also learned that people don\'t just want answers from books — they want conversation and reinterpretation.',
       liveLinks: [
-        { name: 'Live Demo', url: 'https://bookbot.example.com' },
-        { name: 'GitHub', url: 'https://github.com/example/bookbot' }
+        { name: 'Live', url: 'https://www.mybookchat.co' },
+        { name: 'Prototype', url: 'https://preview--book-bot.lovable.app/' }
       ]
     }
   },
