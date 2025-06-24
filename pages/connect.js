@@ -57,6 +57,11 @@ export default function Connect() {
               <span className="text-medium-gray group-hover:text-accent font-medium transition-colors duration-200 text-center">Email</span>
             </a>
           </div>
+          
+          {/* Email Address Display */}
+          <div className="mt-8">
+            <p className="text-medium-gray text-sm font-medium">vinos.samuel@gmail.com</p>
+          </div>
         </div>
       </div>
     </Layout>
