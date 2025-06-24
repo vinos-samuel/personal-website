@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/OvjDC9u2QttMAw2ZoBPMu/_buildManifest.js",
-    "static/OvjDC9u2QttMAw2ZoBPMu/_ssgManifest.js"
+    "static/IgvEFYUdjSs29VW1d0IQS/_buildManifest.js",
+    "static/IgvEFYUdjSs29VW1d0IQS/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -50,7 +50,7 @@
       "static/chunks/main-31a3515003ac0f70.js",
       "static/chunks/996-5f32bf4dda36178b.js",
       "static/chunks/675-82375999dc35899a.js",
-      "static/chunks/pages/projects-9d62538589d10923.js"
+      "static/chunks/pages/projects-cd1dc5a88a676f39.js"
     ],
     "/savyr": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
