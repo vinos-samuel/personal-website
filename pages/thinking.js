@@ -4,39 +4,39 @@ import Link from 'next/link';
 
 const thinkingEntries = [
   {
-    title: 'The Paradox of Choice in Digital Design',
-    description: 'Why giving users infinite options often leads to decision paralysis and how thoughtful constraints can enhance creativity.',
-    link: '/essays/paradox-of-choice',
-    type: 'internal'
-  },
-  {
-    title: 'Building Systems That Think',
-    description: 'Exploring the intersection of AI and human-centered design in creating intelligent, adaptive user experiences.',
-    link: 'https://medium.com/@example/building-systems-that-think',
+    title: 'Wait. Fast. Think.',
+    description: 'Three simple skills. Almost useless on a résumé. But deeply, quietly powerful.',
+    link: 'https://medium.com/@vinos.samuel/wait-fast-think-95fee276aaf0',
     type: 'external'
   },
   {
-    title: 'The Future of Creative Collaboration',
-    description: 'How emerging technologies are reshaping the way teams create, iterate, and bring ideas to life.',
-    link: '/essays/future-creative-collaboration',
-    type: 'internal'
-  },
-  {
-    title: 'Mental Models for Complex Problems',
-    description: 'A framework for breaking down seemingly intractable challenges into manageable, actionable components.',
-    link: 'https://medium.com/@example/mental-models-complex-problems',
+    title: 'Judging — The Brain\'s First Language',
+    description: 'Judgement isn\'t a flaw - Its the brains first language. Our reflex edits reality; wisdom is learning to recut the film in real time.',
+    link: 'https://medium.com/@vinos.samuel/judging-the-brains-first-language-3aea2d50fc22',
     type: 'external'
   },
   {
-    title: 'The Art of Purposeful Procrastination',
-    description: 'Why strategic delays and deliberate thinking time often lead to better solutions than immediate action.',
-    link: '/essays/purposeful-procrastination',
-    type: 'internal'
+    title: 'The Dog Inside Your Head',
+    description: 'On why calming the mind feels a lot like training a restless puppy.',
+    link: 'https://medium.com/@vinos.samuel/the-dog-inside-your-head-88f1b3a01b70',
+    type: 'external'
   },
   {
-    title: 'Learning in Public: A Developer\'s Journey',
-    description: 'Reflections on sharing knowledge, embracing vulnerability, and the unexpected benefits of transparent learning.',
-    link: 'https://medium.com/@example/learning-in-public',
+    title: 'The Multiplicity of Me: A Meditation on Consciousness, Identity, and the Super-Mind',
+    description: '"I am not who I think I am. I am not who you think I am. I am who I think you think I am."',
+    link: 'https://medium.com/@vinos.samuel/the-multiplicity-of-me-a-meditation-on-consciousness-identity-and-the-super-mind-0114e371d837',
+    type: 'external'
+  },
+  {
+    title: 'The Divine Disguise of Answers …',
+    description: 'We often imagine divinity as a cosmic genie, responding to our heartfelt requests with a snap of transcendental fingers. Ask — and you shall receive, they said. So we ask.',
+    link: 'https://medium.com/@vinos.samuel/the-divine-disguise-of-answers-8c7f7f4fee03',
+    type: 'external'
+  },
+  {
+    title: 'Survival of the Dopest',
+    description: 'Somewhere deep in our wiring, two opposing forces pull at us: 1) The craving for more — a hunger born in environments of scarcity. 2) The craving for difference — to stand out, to attract, to adapt.',
+    link: 'https://medium.com/@vinos.samuel/survival-of-the-dopest-f14835ac8a42',
     type: 'external'
   }
 ];
@@ -51,7 +51,7 @@ export default function Thinking() {
             Thinking
           </h1>
           <p className="text-xl text-medium-gray max-w-3xl">
-            Essays, ideas, and explorations into the concepts that shape how we work, create, and connect in our digital world.
+            Ideas I'm wrestling with, writing through, or chasing down rabbit holes—on work, philosophy (mostly), tech, and what it means to be human in all this.
           </p>
         </div>
 
@@ -115,9 +115,33 @@ export default function Thinking() {
               </svg>
             </div>
             <h3 className="text-2xl font-serif font-semibold mb-4 text-dark-gray">More Ideas in Progress</h3>
-            <p className="text-medium-gray max-w-2xl mx-auto">
+            <p className="text-medium-gray max-w-2xl mx-auto mb-6">
               I'm constantly exploring new concepts and developing fresh perspectives. Subscribe to stay updated on new essays and thinking pieces.
             </p>
+            <div className="flex gap-4 justify-center">
+              <a
+                href="https://medium.com/@vinos.samuel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-medium"
+              >
+                Medium
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/vinos25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors font-medium"
+              >
+                Twitter
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>

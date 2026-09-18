@@ -10,7 +10,7 @@ const projects = [
     name: 'BookChat',
     tagline: 'Chat with your favorite books. Explore ideas, characters, and themes in conversation.',
     description: 'A web app that lets users talk to any book using AI — asking questions, challenging ideas, or diving into character perspectives.',
-    image: '/images/bookchat.png',
+    image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg',
     tags: ['AI', 'React', 'Education', 'Natural Language Processing'],
     link: 'https://mybookchat.co/',
     fullDetails: {
@@ -43,18 +43,17 @@ const projects = [
   {
     id: 'contingent-workforce-hub',
     name: 'Contingent Workforce Hub',
-    tagline: 'AI-powered knowledge platform for workforce strategy professionals managing contingent talent at scale.',
-    description: 'A comprehensive platform that centralizes contingent workforce knowledge, provides AI-driven insights, and connects HR professionals with strategic resources.',
+    tagline: 'Navigate the non-employee workforce with clarity and confidence.',
+    description: 'A digital resource and AI assistant for HR, Procurement, and Legal teams working with contingent talent, covering regulations, best practices, and market trends.',
     image: 'https://images.pexels.com/photos/3989578/pexels-photo-3989578.jpeg',
     tags: ['AI Agent', 'HR Tech', 'Knowledge Hub', 'Workforce Strategy'],
-    link: 'https://cwh.example.com',
+    link: 'https://kzmitfd1c90b2ya6vo8i.lite.vusercontent.net/',
     fullDetails: {
-      whatItDoes: 'The Contingent Workforce Hub is an AI-powered platform that serves as a central knowledge repository for workforce strategy professionals. It features an intelligent assistant that can answer complex questions about contingent workforce management, compliance requirements, market trends, and strategic best practices.',
-      whyBuilt: 'Working in workforce strategy, I noticed how fragmented and scattered industry knowledge was. Professionals were spending too much time searching for information across multiple sources. I built this hub to centralize expertise and make it accessible through conversational AI.',
-      whatLearned: 'This project deepened my understanding of enterprise knowledge management, AI agent development, and the specific challenges facing modern workforce strategy teams. I learned how to build systems that don\'t just store information but actively help professionals make better strategic decisions.',
+      whatItDoes: 'This site is a digital resource and AI assistant for HR, Procurement, and Legal teams working with contingent talent. It covers regulations, best practices, onboarding, classification, and market trends across APAC.',
+      whyBuilt: 'After years of managing large-scale contingent programs, I wanted to create a space where others could access the frameworks, market insights, and decision logic I often had to explain from scratch. It\'s part knowledge hub, part conversational agent — still evolving — and designed to help practitioners think clearly and act quickly.',
+      whatLearned: 'Building the bot reinforced how nuanced the contingent space really is — every use case depends on context. I also explored how LLMs can deliver context-sensitive answers when paired with the right source material, and how knowledge tools need to evolve alongside regulations.',
       liveLinks: [
-        { name: 'Platform Demo', url: 'https://cwh.example.com' },
-        { name: 'Knowledge Base', url: 'https://cwh.example.com/knowledge' }
+        { name: 'Contingent Workforce Hub (WIP)', url: 'https://kzmitfd1c90b2ya6vo8i.lite.vusercontent.net/' }
       ]
     }
   }
@@ -185,7 +184,12 @@ export default function Projects() {
               </button>
               
               <div className="absolute bottom-6 left-6 text-white">
-                <h2 className="text-3xl font-serif font-bold mb-2">{selectedProject.name}</h2>
+                <h2 className="text-3xl font-serif font-bold mb-2">
+                  {selectedProject.name}
+                  {selectedProject.id === 'contingent-workforce-hub' && (
+                    <span className="text-lg font-normal opacity-80 ml-2">(WIP)</span>
+                  )}
+                </h2>
                 <p className="text-lg opacity-90">{selectedProject.tagline}</p>
               </div>
             </div>

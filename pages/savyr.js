@@ -1,9 +1,21 @@
-
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const projects = [
+  {
+    title: 'Savyr Out Loud',
+    description: `Savyr doesn't just read books—he talks about them. Out loud. In his own words. From epic battles to silly sidekicks, this is where he shares what made him laugh, wonder, or yell "Wait, what?!" Real reviews. Real voice. No script.
+
+🔁 Updated Weekly
+📁 https://www.youtube.com/@SavyrOutLoud
+📸 https://www.instagram.com/mindfulbookie/`,
+    icon: '📖',
+    color: 'from-yellow-400 to-pink-500',
+    type: 'reviews',
+    status: 'weekly',
+    link: 'https://www.youtube.com/@SavyrOutLoud'
+  },
   {
     title: 'Comic Book Adventures',
     description: 'Creating superhero stories and drawing comic strips together. From stick figures to epic tales of adventure and friendship.',
@@ -12,33 +24,6 @@ const projects = [
     type: 'creative',
     status: 'ongoing',
     link: '#comic-gallery'
-  },
-  {
-    title: 'LEGO Story Builder',
-    description: 'Building worlds brick by brick and telling amazing stories with our creations. Each build becomes a new chapter in our adventures.',
-    icon: '🧱',
-    color: 'from-red-400 to-orange-500',
-    type: 'building',
-    status: 'collection',
-    link: '#lego-stories'
-  },
-  {
-    title: 'Quiz & Game Zone',
-    description: 'Fun educational games and quizzes we build together on Replit. Learning through play and coding challenges!',
-    icon: '🎮',
-    color: 'from-green-400 to-teal-500',
-    type: 'interactive',
-    status: 'coming-soon',
-    link: 'https://replit.com/@example/savyr-quiz-game'
-  },
-  {
-    title: 'Book Reviews by Savyr',
-    description: 'Savyr\'s honest thoughts on the books we read together. From picture books to chapter books, every story gets a review!',
-    icon: '📖',
-    color: 'from-yellow-400 to-pink-500',
-    type: 'reviews',
-    status: 'weekly',
-    link: '#book-reviews'
   }
 ];
 
@@ -77,7 +62,7 @@ export default function Savyr() {
               <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
                 <div className={`w-full h-full bg-gradient-to-br ${project.color} rounded-full transform translate-x-8 -translate-y-8`}></div>
               </div>
-              
+
               {/* Status Badge */}
               <div className="flex justify-between items-start mb-6">
                 <div className={`w-16 h-16 bg-gradient-to-br ${project.color} rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300`}>
@@ -91,8 +76,8 @@ export default function Savyr() {
               <h2 className="text-2xl font-serif font-semibold mb-4 text-dark-gray group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-pink-600 group-hover:bg-clip-text transition-all duration-300">
                 {project.title}
               </h2>
-              
-              <p className="text-medium-gray leading-relaxed mb-6">
+
+              <p className="text-medium-gray leading-relaxed mb-6 whitespace-pre-line">
                 {project.description}
               </p>
 
@@ -122,41 +107,6 @@ export default function Savyr() {
               )}
             </div>
           ))}
-        </div>
-
-        {/* Recent Highlights Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-12 mb-16">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-serif font-bold mb-4 text-dark-gray">Recent Highlights</h2>
-            <p className="text-medium-gray">Our latest adventures and creations</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Placeholder for image content */}
-            <div className="bg-white rounded-2xl p-6 shadow-soft">
-              <div className="bg-gray-100 rounded-xl h-32 mb-4 flex items-center justify-center">
-                <span className="text-gray-400">📸 Latest Comic Strip</span>
-              </div>
-              <h3 className="font-semibold mb-2">The Super Sandwich Adventure</h3>
-              <p className="text-sm text-medium-gray">Our hero saves lunch time with creativity and teamwork!</p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-soft">
-              <div className="bg-gray-100 rounded-xl h-32 mb-4 flex items-center justify-center">
-                <span className="text-gray-400">🏗️ LEGO Creation</span>
-              </div>
-              <h3 className="font-semibold mb-2">The Floating Castle</h3>
-              <p className="text-sm text-medium-gray">An architectural marvel that defies gravity and imagination!</p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-soft">
-              <div className="bg-gray-100 rounded-xl h-32 mb-4 flex items-center justify-center">
-                <span className="text-gray-400">⭐ Book Review</span>
-              </div>
-              <h3 className="font-semibold mb-2">"Dog Man: Mothering Heights"</h3>
-              <p className="text-sm text-medium-gray">5 stars! "Very funny and the drawings are awesome!" - Savyr</p>
-            </div>
-          </div>
         </div>
 
         {/* Future Projects Section */}

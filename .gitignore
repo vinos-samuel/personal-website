@@ -1,2 +1,9 @@
 node_modules/
-.env
+.next/
+out/
+.vercel/
+.env*
+!.env.example
+.DS_Store
+personal-website-source/
+personal-website-source.zip

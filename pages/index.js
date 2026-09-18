@@ -11,11 +11,11 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight">
               <span className="text-gradient">Systems thinker.</span><br />
-              <span className="text-dark-gray">Builder.</span><br />
+              <span className="text-dark-gray">Experimentist.</span><br />
               <span className="text-medium-gray">Dad.</span>
             </h1>
             <p className="text-xl md:text-2xl text-medium-gray mb-12 max-w-2xl mx-auto font-light">
-              Exploring the intersection of technology, creativity, and human connection through thoughtful design and purposeful code.
+              Exploring how technology reshapes work, creativity, and human connection—through curiosity, code, and the occasional philosophical rabbit hole.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/about" className="btn-primary">
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
             </Link>
             
-            <Link href="/ai-vibe-coding" className="card-hover group">
+            <Link href="/projects" className="card-hover group">
               <div className="bg-white rounded-2xl p-8 h-full shadow-soft border border-gray-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +55,7 @@ export default function Home() {
               </div>
             </Link>
             
-            <Link href="/thoughts" className="card-hover group">
+            <Link href="/thinking" className="card-hover group">
               <div className="bg-white rounded-2xl p-8 h-full shadow-soft border border-gray-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl mb-6 flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
             </Link>
             
-            <Link href="/savyrs-corner" className="card-hover group">
+            <Link href="/savyr" className="card-hover group">
               <div className="bg-white rounded-2xl p-8 h-full shadow-soft border border-gray-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl mb-6 flex items-center justify-center">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
